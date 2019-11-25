@@ -1,0 +1,23 @@
+{
+  "name": "sushi_animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://andreilucalink.github.io/gsap-anim",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreilucalink/gsap_anim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreilucalink/gsap_anim/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
