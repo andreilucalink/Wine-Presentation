@@ -241,8 +241,9 @@ footer {
   color: #fff;
   position: absolute;
   text-align: center;
-  width: 100%;
+  width: 99%;
   top: 15%;
+
 }
 
 
@@ -497,6 +498,10 @@ footer {
 }
 
 @media only screen and (min-width: 350px) and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .nav-link {
+    font-size: .9em;
+  }
+
   .container {
     margin-top: 5rem;
   }
@@ -514,5 +519,13 @@ footer {
     i {
       display: none;
     }
+  }
+}
+
+@media only screen and (orientation: portrait) {
+
+  .wine-text,
+  .sushi-text {
+    font-size: 2em;
   }
 }

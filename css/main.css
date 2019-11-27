@@ -253,7 +253,7 @@ footer a {
   color: #fff;
   position: absolute;
   text-align: center;
-  width: 100%;
+  width: 99%;
   top: 15%;
 }
 
@@ -514,6 +514,9 @@ footer a {
 }
 
 @media only screen and (min-width: 350px) and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .nav-link {
+    font-size: .9em;
+  }
   .container {
     margin-top: 5rem;
   }
@@ -526,6 +529,13 @@ footer a {
   }
   #wine-body i {
     display: none;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .wine-text,
+  .sushi-text {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
