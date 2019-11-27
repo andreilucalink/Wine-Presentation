@@ -3,9 +3,9 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -22,12 +22,12 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-bottom: white 5px solid;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .nav-link {
@@ -51,7 +51,7 @@ main .up-arrow {
   text-decoration: none;
   margin-bottom: 50px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   margin-right: 50px;
   color: rgba(0, 0, 0, 0.9);
 }
@@ -78,8 +78,8 @@ footer .footer-content {
 footer .footer-content .footer-section {
   /* border: 1px solid white; */
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 25px;
   text-align: center;
 }
@@ -157,8 +157,8 @@ footer img:hover {
   display: grid;
   justify-items: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 94vh;
   margin-top: 6vh;
   width: 100%;
@@ -173,8 +173,8 @@ footer img:hover {
   display: flex;
   justify-items: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 94vh;
   width: 100%;
   margin-top: 6vh;
@@ -186,27 +186,28 @@ footer img:hover {
   left: 50%;
   color: #fff;
   -webkit-animation-name: arrow;
-          animation-name: arrow;
+  animation-name: arrow;
   -webkit-animation-duration: 1.7s;
-          animation-duration: 1.7s;
+  animation-duration: 1.7s;
   -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes arrow {
   from {
     opacity: 0.5;
     -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    transform: translateY(-40px);
   }
+
   to {
     opacity: 1;
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 }
 
@@ -214,12 +215,13 @@ footer img:hover {
   from {
     opacity: 0.5;
     -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    transform: translateY(-40px);
   }
+
   to {
     opacity: 1;
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 }
 
@@ -250,14 +252,14 @@ footer img:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #wine-products .scroll-to-wine {
@@ -279,13 +281,13 @@ footer img:hover {
   display: flex;
   margin-bottom: 50px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #wine-products .product-container .card {
@@ -294,28 +296,28 @@ footer img:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 100px 0;
 }
 
 #wine-products .product-container .card:nth-child(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 #wine-products .product-container .card:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
   text-align: right;
 }
 
@@ -347,7 +349,7 @@ footer img:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #wine-products .product-container .card .contentBx::before {
@@ -372,11 +374,11 @@ footer img:hover {
   background: #000;
   opacity: 0.9;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   z-index: 1;
   text-align: left;
   -webkit-transition: opacity 0.5s ease-out;
@@ -432,34 +434,40 @@ footer img:hover {
   .product-container .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     max-width: 350px;
     margin: 20px !important;
     margin-bottom: 80px !important;
   }
+
   .product-container .card .imgBx {
     height: 250px !important;
     width: 100% !important;
     left: 0 !important;
   }
+
   .product-container .card .contentBx {
     width: 100% !important;
     height: 400px !important;
     right: 0 !important;
     text-align: center !important;
   }
+
   .product-container .card .contentBx a {
     position: absolute !important;
     bottom: 0%;
     left: 32%;
   }
+
   .product-container .card .contentBx .content {
     padding: 30px !important;
   }
+
   .product-container .card .contentBx::before {
     top: 0 !important;
     left: 0 !important;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
