@@ -13,19 +13,26 @@ tl.from(
 );
 
 //struguri
-tl.from("#grape", 1, { y: "700", opacity: 0, ease: Power1.easeOut }, "-=.3");
+tl.from("#grape", 0.8, { y: "800", opacity: 0, ease: Power1.easeOut }, "-=.3");
 
 //bg
 tl.from(
   "#bg-wine-left",
-  0.8,
+  0.9,
   { x: "800", y: "1200", opacity: 0, ease: Power2.easeOut },
-  "-=.9"
+  "-=.8"
 );
 
 tl.from(
   "#bg-wine-right",
-  0.8,
+  0.9,
   { x: "1500", opacity: 0, ease: Power2.easeOut },
-  "-=1"
+  "-=.9"
+);
+
+tl.from(
+  ".wine-text",
+  0.6,
+  { y: "250", opacity: 0, ease: Power1.easeOut },
+  "-=0.5"
 );
