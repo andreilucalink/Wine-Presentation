@@ -12,7 +12,6 @@
 
 
 
-
 // Bodies
 
 body,
@@ -88,23 +87,38 @@ footer {
     min-height: calc(180px - 60px);
     display: flex;
 
-
+    // Casute footer
     .footer-section {
-      /* border: 1px solid white; */
+      /*  border: 1px solid white; */
       flex: 1;
-
-      padding: 25px;
       text-align: center;
-
+      display: flex;
     }
 
     .social-media {
       margin: auto;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 30px;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transition: all 0.1s ease;
+          height: 35px;
+
+        }
+      }
     }
 
     .about,
     .contact {
       margin: auto;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
 
       a {
         text-decoration: none;
@@ -137,17 +151,7 @@ footer {
     text-decoration: none;
   }
 
-  img {
-    height: 30px;
-    margin-right: 10px;
-    transition: all 0.3s ease;
 
-    &:hover {
-      transition: all 0.1s ease;
-      height: 35px;
-
-    }
-  }
 }
 
 // Sushi products
@@ -193,8 +197,8 @@ footer {
 
   i {
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 87%;
+    left: 47%;
     color: #fff;
     animation-name: arrow;
     animation-duration: 1.7s;
@@ -399,8 +403,9 @@ footer {
 }
 
 
-
 @media (max-width: 1100px) {
+
+
   .product-container {
     .card {
       flex-direction: column;
@@ -441,6 +446,73 @@ footer {
       }
 
 
+    }
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  footer {
+    .social-media {
+      flex-wrap: wrap;
+      border: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    img {
+      height: 30px !important;
+    }
+  }
+}
+
+@media screen and (min-width:361px) and (max-width: 767px) {
+  footer {
+    img {
+      height: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #wine-body {
+    i {
+      left: 45% !important;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  #wine-body {
+    i {
+      left: 48% !important;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  #wine-body {
+    i {
+      left: 49% !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .container {
+    margin-top: 5rem;
+  }
+
+  #wine-box {
+    height: 200px;
+  }
+
+  .wine-text {
+    font-size: 2em;
+    top: 15%;
+  }
+
+  #wine-body {
+    i {
+      display: none;
     }
   }
 }
