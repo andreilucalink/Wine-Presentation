@@ -1,3 +1,177 @@
+.contact-nav {
+  border-bottom: #43a087 5px solid;
+}
+
+.contact-section {
+  padding: 8rem;
+}
+
+.contact-section .heading {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.contact-section .heading::after {
+  content: "";
+  width: 22rem;
+  height: 0.6rem;
+  background-color: #43a087;
+  position: absolute;
+  bottom: -1.8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.contact-section .contact-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-section .contact-card-wrapper .contact-card {
+  width: 22rem;
+  height: 50rem;
+  background-color: #ebeef8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 2rem;
+  text-align: center;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.contact-section .contact-card-wrapper .contact-card .card-img {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-section .contact-card-wrapper .contact-card .profile-img {
+  height: 12rem;
+  width: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px #43a087 solid;
+  margin-top: -12rem;
+  z-index: 2;
+}
+
+.contact-section .contact-card-wrapper .contact-card h1 {
+  font-size: 1.8rem;
+}
+
+.contact-section .contact-card-wrapper .contact-card p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.contact-section .contact-card-wrapper .contact-card .country {
+  margin-top: -1rem;
+  height: 50px;
+}
+
+.contact-section .contact-card-wrapper .contact-card .contact-media {
+  height: 50px;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-section .contact-card-wrapper .contact-card .contact-media img {
+  height: 35px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.contact-section .contact-card-wrapper .contact-card .contact-media img:hover {
+  height: 40px;
+}
+
+.contact-section .contact-card-wrapper .contact-card .job-title {
+  font-weight: 400 !important;
+}
+
+.contact-section .contact-card-wrapper .contact-card .about {
+  font-weight: 600;
+}
+
+.contact-section .contact-card-wrapper .contact-card .contact-btn {
+  width: 140px;
+  height: 40px;
+  background-color: #43a087;
+  color: #fff;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 5px;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.contact-section .contact-card-wrapper .contact-card .contact-btn:hover {
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+  background-color: #06533f;
+}
+
+.contact-section a {
+  text-decoration: none;
+}
+
+.contact-section li {
+  list-style: none;
+}
+
 body,
 html {
   margin: 0;
@@ -13,8 +187,10 @@ html {
 }
 
 nav {
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
+  z-index: 99;
   width: 100%;
   height: 6vh;
   background: rgba(0, 0, 0, 0.95);
@@ -28,6 +204,11 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+nav.fade-in {
+  background: black;
+  border-bottom: #43a087 5px solid;
 }
 
 .nav-link {
@@ -63,7 +244,7 @@ main .up-arrow:hover {
 footer {
   border-top: 5px #43a087 solid;
   height: 180px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   width: 100%;
   position: relative;
 }
@@ -175,7 +356,6 @@ footer a {
       -ms-flex-align: center;
           align-items: center;
   height: 94vh;
-  margin-top: 6vh;
   width: 100%;
 }
 
@@ -192,7 +372,6 @@ footer a {
           align-items: center;
   height: 94vh;
   width: 100%;
-  margin-top: 6vh;
 }
 
 #wine-body i {

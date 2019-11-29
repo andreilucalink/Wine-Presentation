@@ -1,3 +1,5 @@
+@import "contact";
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -28,15 +30,24 @@ html {
 }
 
 nav {
-  position: absolute;
+  position: sticky;
   top: 0;
+  z-index: 99;
   width: 100%;
   height: 6vh;
-  background: rgba(0, 0, 0, .95);
+  background: rgba(0, 0, 0, 0.95);
   display: flex;
   align-items: center;
   border-bottom: white 5px solid;
   justify-content: center;
+
+
+}
+
+nav.fade-in {
+
+  background: rgba(0, 0, 0, 1);
+  border-bottom: #43a087 5px solid;
 }
 
 .nav-link {
@@ -79,7 +90,7 @@ main {
 footer {
   border-top: 5px #43a087 solid;
   height: 180px;
-  background: rgba(0, 0, 0, .9);
+  background: rgba(0, 0, 0, .95);
   width: 100%;
   position: relative;
 
@@ -178,7 +189,6 @@ footer {
   justify-items: center;
   align-items: center;
   height: 94vh;
-  margin-top: 6vh;
   width: 100%;
 }
 
@@ -193,7 +203,7 @@ footer {
   align-items: center;
   height: 94vh;
   width: 100%;
-  margin-top: 6vh;
+
 
   i {
     position: absolute;

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="302" height="895" viewBox="0 0 302 895">
+  <g id="wine-bottle" transform="translate(-812 -145)">
+    <g id="Group_1" data-name="Group 1" transform="translate(812.06 210.533)">
+      <rect id="contur_corp" data-name="contur corp" width="302" height="567" rx="75" transform="translate(-0.06 262.467)" fill="#fff"/>
+      <path id="contur_gat" data-name="contur gat" d="M30,0h88a30,30,0,0,1,30,30V361a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V30A30,30,0,0,1,30,0Z" transform="translate(76.94 -65.533)" fill="#fff"/>
+      <path id="Union_1" data-name="Union 1" d="M58,794A58,58,0,0,1,0,736V324.742a58,58,0,0,1,58-58H73.786V-33a30,30,0,0,1,30-30h46.826a30,30,0,0,1,30,30V266.741H197a58,58,0,0,1,58,58V736a58,58,0,0,1-58,58Z" transform="translate(23.94 15.467)" fill="#842727"/>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(862.383 603.472)">
+      <g id="Group_4" data-name="Group 4">
+        <rect id="brand" width="162" height="347" transform="translate(-0.383 -0.473)" fill="#fff" opacity="0.6"/>
+        <path id="umbra" d="M-2.315,0H58.42V344.454H-2.315s-15.176-82.432-15.176-168.546S-2.315,0-2.315,0Z" transform="translate(102.962 1.735)" fill="#fff" opacity="0.47"/>
+      </g>
+    </g>
+    <path id="capac" d="M24,0H83a24,24,0,0,1,24,24v99a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V24A24,24,0,0,1,24,0Z" transform="translate(909 163)" fill="#4a3333"/>
+    <rect id="delimitare-capac" width="107" height="16" transform="translate(909 286)" fill="#fff"/>
+  </g>
+</svg>
