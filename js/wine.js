@@ -5,14 +5,14 @@ let tl = new TimelineMax();
 let scrollpos = window.scrollY;
 const header = document.getElementById("navbar");
 const header_height = header.offsetHeight;
-(function x(h) {
+/* (function x(h) {
   console.log(h);
-})(header_height);
+})(header_height); */
 const add_class_on_scroll = () => header.classList.add("fade-in");
 const remove_class_on_scroll = () => header.classList.remove("fade-in");
 window.addEventListener("scroll", function() {
   scrollpos = window.scrollY;
-  if (scrollpos >= 978) {
+  if (scrollpos >= 881) {
     add_class_on_scroll();
   } else {
     remove_class_on_scroll();
